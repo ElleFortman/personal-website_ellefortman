@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Work</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap " rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,800;1,12..72,800&display=swap" rel="stylesheet">
+</head>
+
+	
+	<body>
+	
+	<ul class="topnav">
+	  <li><a href="index.html">ABOUT</a></li>
+	  <li><a class="active" href="work.html">WORK</a></li>
+	  <li><a href="toolkit.html">TOOL KIT</a></li>
+	  <li><a href="experiments.html">EXPERIMENTS</a></li>
+	</ul>
+
+	<header>
+	<h1> Work </h1>
+	</header>
+	
+	<section>
+
+<h4>Project Gallery</h4>
+
+<div class="responsive">
+  <div class="gallery">
+      <img id="myImg" src="Images/ElleFortman_Collage 2.jpg" alt="Collage 1" width="600" height="400">
+    <div class="desc">Collage #1</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+      <img id="myImg1" src="Images/ElleFortman_Collage1.jpg" alt="Collage 2" width="600" height="400">
+    <div class="desc">Collage #2</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img id= "myImg2" src="Images/ElleFortman_Collage 3.jpg" alt="Collage 3" width="600" height="400">
+    <div class="desc">Collage #3</div>
+  </div>
+</div>
+
+<!-- 4th portfolio work
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Images/typepairing.png">
+      <img src="Images/typepairing.png" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>-->
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+</div>
+	
+	
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById("myImg1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</section>
+
+</body>
+</html>
